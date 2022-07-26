@@ -1,3 +1,3 @@
-FROM openjdk:8
-EXPOSE 8080
-CMD ["echo","Testing Docker Image"]
+from python:latest
+
+CMD [ "python", "-c", "print('Jenkins Docker Integratiion test')"]
