@@ -27,6 +27,12 @@ pipeline {
           }
         }
       }
+      stage('Building image') {
+        steps{
+          script {
+            sh '/root/Tesh.sh'
+        }
+      }
     }
   }
 }
