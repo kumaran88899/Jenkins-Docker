@@ -24,6 +24,7 @@ pipeline {
           docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
               dockerImage.push("Version_${env.BUILD_NUMBER}")
               dockerImage.push("latest")
+            }
           }
         }
       }
@@ -36,4 +37,3 @@ pipeline {
       }
     }
   }
-}
