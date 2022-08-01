@@ -28,6 +28,12 @@ pipeline {
         }
       }
     }
+    stage('Pull Image') {
+      steps{
+        scripts {
+          sh './Test.sh'
+        }
+      }
+    }
   }
 }
-
