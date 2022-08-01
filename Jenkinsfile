@@ -31,7 +31,7 @@ pipeline {
     stage('Pull Image') {
       steps{
         scripts {
-          sh '/root/Test.sh'
+          sh '/home/Scripts/Test.sh'
         }
       }
     }
