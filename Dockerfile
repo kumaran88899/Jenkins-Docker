@@ -1,3 +1,3 @@
 from python:latest
 
-CMD [ "python", "-c", "print('Jenkins Docker Integratiion test')"]
+CMD [ "python", "-c", "print('Jenkins Docker Integration test')"]
