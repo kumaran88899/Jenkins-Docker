@@ -1,5 +1,4 @@
-FROM j3tm0t0/amzn
-RUN yum update 
+FROM j3tm0t0/amzn 
 RUN yum install –y apache2 
 RUN yum install –y apache2-utils 
 RUN yum clean 
