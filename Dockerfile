@@ -1,5 +1,2 @@
-FROM httpd
-RUN yum -y install httpd
-RUN echo hoge > /var/www/html/index.html
-CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
-EXPOSE 80
+FROM httpd:2.4
+COPY ./public-html/ /usr/local/apache2/htdocs/
